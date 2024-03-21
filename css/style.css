@@ -257,3 +257,7 @@ span{
     margin: .7rem 0;
 
 }
+
+#interest{
+    display: flex;
+}
