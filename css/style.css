@@ -184,3 +184,46 @@ span{
     font-size: 1.6rem;
     margin: 2rem;
 }
+
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-container .services-box{
+    flex: 1 1 30rem;
+    background-color: var(--second-bg-color);
+    padding: 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color); 
+    transition: 0.5 ease;
+    
+}
+
+.services-container .services-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.services-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+
+}
+
+.services-box h3 {
+    font-size: 2.4rem;
+}
+
+.services-box p{
+    font-size: 1.4rem;
+    margin: 2rem;
+}
