@@ -15,7 +15,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: rgb(26, 240, 255);
+    --main-color: #41FFAE;
 }
 
 html {
@@ -45,6 +45,18 @@ section {
     justify-content: space-between;
     align-items: center;
     z-index:100;
+}
+.logo-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+font-size: 7px;
+}
+
+.logo-container i{
+    font-size: 50px;
+    color: var(--main-color);
 }
 
 .logo{
@@ -84,9 +96,21 @@ section {
 
 .home-img img {
     width: 30vw;
+    animation: floatImage 4s ease-in-out infinite;
 
 }
 
+@keyframes floatImage {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(-2.4rem);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
 
 .home-content h3 {
     font-size: 3.2rem;
@@ -147,6 +171,7 @@ span{
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    animation: floatImage 10s ease-in-out infinite;
 }
 
 .btn:hover {
@@ -169,6 +194,12 @@ span{
 .heading {
     text-align: center;
     font-size: 4.5rem;
+}
+
+.about-content {
+display: flex;
+align-items: center;
+flex-direction: column;
 }
 
 .about-content h2 {
@@ -213,10 +244,23 @@ span{
     transform: scale(1.02);
 }
 
-.services-box i {
-    font-size: 7rem;
-    color: var(--main-color);
+/*modelando iconos con id*/
+#external{
+    font-size: 25px;
+}
 
+#skillsicon{
+    font-size: 60px;
+}
+
+#stackicon{
+    font-size: 120px;
+}
+/*--------------------------*/
+
+.services-box i {
+    font-size: 4rem;
+    color: var(--main-color);
 }
 
 .services-box h3 {
@@ -261,3 +305,40 @@ span{
 #interest{
     display: flex;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+}
+
+.footer-text p {
+    font-size: 1.6 rem;
+
+
+}
+
+.footer-iconTop  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+    color:var(--bg-color)
+}
+
+.footer-iconTop a:hover{
+box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-inconTop a i {
+    font-size:  8.5rem;
+    color: var(--second-bg-color);
+}
+
