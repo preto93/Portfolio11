@@ -43,10 +43,10 @@
 
         </p>
         <div class="social-media">
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-gmail' ></i></a>
-            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#" onclick="location.href='https://www.linkedin.com/in/fede-tartari-3588b1213/'"><i class='bx bxl-linkedin' ></i></a>
+            <a href="mailto:federicotartari93@gmail.com?Subject=Interes%20en20%servicios"><i class='bx bxl-gmail' ></i></a>
+            <a href="#"onclick="location.href=' https://w.app/bDT7S2'"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="#" onclick="location.href='https://github.com/preto93'"><i class='bx bxl-github'></i></a>
         </div>
         <a href="" class="btn">Download CV</a>
         
@@ -70,7 +70,7 @@
 
     </p>
 
-    <a href="#" class="btn">Read More</a>
+    <a href="#skills" class="btn">Read More</a>
 </div>
 </div>
 
@@ -79,9 +79,9 @@
 <!--Stack design-->
 <section class="stack" id="stack">
     <h2 class="heading">Tech<span> stack</span></h2>
-    <div class="services-container">
+    <div class="services-container" id="stack-container">
 
-        <div class="services-box">
+        <div class="services-box" id="#js">
             <i class='bx bxl-html5' id="stackicon" ></i>
             <i class='bx bxl-javascript' id="stackicon" ></i>
             <i class='bx bxl-css3'id="stackicon" ></i>
@@ -90,14 +90,24 @@
             <i class='bx bxl-postgresql' id="stackicon" ></i>
         </div>
 
-        <div class="services-box">
-            <i class='bx bx-search-alt' id="stackicon"  ></i>
-            <i class='bx bxl-figma' id="stackicon" ></i>
-            <i class='bx bx-shape-circle' id="stackicon" ></i>
-            <i class='bx bxl-visual-studio' id="stackicon" ></i>
-            <i class='bx bxl-github' id="stackicon" ></i>
-            <i class='bx bxl-git' id="stackicon" ></i>
-        </div>
+        <div class="services-box" id="interest">
+            <h2>Interests</h2>
+            <div class="">
+                <i class='bx bxl-redux' id="stackicon"></i>
+            </div>
+            <div class="">
+                <i class='bx bxl-typescript'id="stackicon"></i>
+            </div>
+            <div class="">
+                <i class='bx bxl-python' id="stackicon"></i>
+            </div>
+
+            <p>Others</p>
+            <h3>IA</h3>
+            <h3>Blockchain</h3>
+            <h3>Web3</h3>
+            <h3>Solidity</h3>
+       </div>
 
         <div class="services-box">
             <i class='bx bxl-discord'id="stackicon"  ></i>
@@ -106,18 +116,12 @@
             <i class='bx bxl-google-plus' id="stackicon" ></i>
         </div>
 
-        <div class="services-box" id="interest">
-            <h2>Interests</h2>
-            <div class="">
-                <i class='bx bxl-discord'id="stackicon"  ></i>
-            </div>
-            <div class="">
-                <i class='bx bxl-discord' id="stackicon"  ></i>
-            </div>
-            <div class="">
-                <i class='bx bxl-discord' id="stackicon"  ></i>
-            </div>
-       </div>
+        <div class="services-box">
+            <i class='bx bxl-figma' id="stackicon" ></i>
+            <i class='bx bxl-visual-studio' id="stackicon" ></i>
+            <i class='bx bxl-github' id="stackicon" ></i>
+            <i class='bx bxl-git' id="stackicon" ></i>
+        </div>
 
     </div>
     
@@ -215,7 +219,7 @@
         <input type="email" placeholder="Email subject">
     </div>
     <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-    <input type="submit" value="Send Message" class="btn">
+    <input type="submit" value="Send Message" class="btn" id="send">
     </form>
 </section>
 
