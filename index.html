@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -125,43 +126,44 @@
 <!--Skills design-->
 <section class="skills" id="skills">
     <h2 class="heading" id="subtitle">My<span> skills</span></h2>
-    <div class="services-container">
-        <div class="services-box">
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
             <i class='bx bxs-briefcase' id="skillsicon"></i>
             <h3>Project Managment</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus earum amet quo. Tempora nihil hic delectus dicta commodi eligendi ab fugit! Dolores tempore voluptas hic, aut atque voluptatem iure?</p>
         </div>
 
-        <div class="services-box">
+        <div class="swiper-slide">
             <i class='bx bx-paint' id="skillsicon"></i>
             <h3>Design</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus earum amet quo. Tempora nihil hic delectus dicta commodi eligendi ab fugit! Dolores tempore voluptas hic, aut atque voluptatem iure?</p>
         </div>
 
-        <div class="services-box">
+        <div class="swiper-slide">
             <i class='bx bx-code-alt' id="skillsicon"></i>
             <h3>Frontend Development</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus earum amet quo. Tempora nihil hic delectus dicta commodi eligendi ab fugit! Dolores tempore voluptas hic, aut atque voluptatem iure?</p>
         </div>
 
-        <div class="services-box">
+        <div class="swiper-slide">
             <i class='bx bx-search-alt' id="skillsicon" ></i>
             <h3>QA</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus earum amet quo. Tempora nihil hic delectus dicta commodi eligendi ab fugit! Dolores tempore voluptas hic, aut atque voluptatem iure?</p>
         </div>
 
-        <div class="services-box">
+        <div class="swiper-slide">
             <i class='bx bxl-discord'id="skillsicon" ></i>
             <h3>Communication</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus earum amet quo. Tempora nihil hic delectus dicta commodi eligendi ab fugit! Dolores tempore voluptas hic, aut atque voluptatem iure?</p>
         </div>
 
-        <div class="services-box">
+        <div class="swiper-slide">
             <i class='bx bxl-discord'id="skillsicon" ></i>
             <h3>Communication</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloribus earum amet quo. Tempora nihil hic delectus dicta commodi eligendi ab fugit! Dolores tempore voluptas hic, aut atque voluptatem iure?</p>
         </div>
-
+    </div>
        
     </div>
 
@@ -228,11 +230,32 @@
 </div>
 </footer>
 
+
 <!--Scroll reveal-->
 <script src="https://unpkg.com/scrollreveal"></script>
 
 <!--jS link-->
 <script src="js/script.js"></script>
+
+<!--jS carrusel-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper (".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        coverflowEffect: {
+            depth: 500,
+            modifer: 1,
+            slidesShadows:true,
+            rotate:0,
+            stretch:0
+        }
+    })
+</script>
 
 </body>
 
