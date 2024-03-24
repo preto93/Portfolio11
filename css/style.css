@@ -34,6 +34,16 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+.white{
+    background-color: #5e90a4;
+    transition: all 1.5s ease;
+}
+
+.white header,
+.white footer {
+    background-color: #5e90a4;
+    transition: all 1.5s ease;
+}
 
 
 .header {
@@ -116,7 +126,7 @@ font-size: 7px;
 .home-img img {
     width: 30vw;
     animation: floatImage 4s ease-in-out infinite;
-    margin-top: 272px;
+    margin-top: 275px;
 
 }
 
@@ -217,7 +227,7 @@ align-content: center;
 
 .about-img img {
     width: 30vw;
-    margin-top: 275px;
+    margin-top: 276px;
 }
 
 
@@ -382,22 +392,34 @@ align-items:center;
 }
 
 /*----------- FORM --------------*/
-.contact h2{
-    margin-bottom: 8rem;
 
+.contact{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.contact h2{
+    font-size: 40px;
+    color:#fff;
+    text-align: center;
+    margin-bottom: 8rem;
 }
 
 .contact form{
-    max-width: 70rem;
-    margin: 1rem auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-bottom: 3rem;
+    height: 600px;
 }
 
 .contact form .input-box{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content:space-around;
+    margin: 20px;
 }
 
 .contact form .input-box input,
@@ -405,9 +427,9 @@ align-items:center;
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: var(--second-bg-color);
+    color: #fff;
     border-radius: 8rem;
-    margin: .7rem 0;
+    margin: .100rem 0;
 
 }
 
@@ -468,7 +490,7 @@ box-shadow: 0 0 1rem var(--main-color);
     background: transparent;
     border: 2px solid #41FFAE;
     outline: none;
-    border-radius: 6px;
+    border-radius: 16px;
     font-size: 16px;
     color: #fff;
     margin: 12px 0;
@@ -482,26 +504,27 @@ box-shadow: 0 0 1rem var(--main-color);
 .formcont{
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    align-items: stretch;
+    justify-content: flex-start;
+
 }
 
-.contact h2{
-    font-size: 40px;
-    color:#fff;
-    text-align: center;
-    margin-bottom: 10px;
-}
 
-.contact form{
-    width: 600px;
-    height: 600px;
-    text-align: center;
-}
-
-#message{
+.formcont button{
     margin-top: 30px;
+    margin-left: 170px;
 }
 
-.input-box input{
+.input-field field input{
+    margin: 120px;
+}
 
+#toggle{
+    display: none;
+}
+
+#label_toggle{
+    font-size: 3rem;
+    color:var(--main-color);
+    cursor: pointer;
 }
