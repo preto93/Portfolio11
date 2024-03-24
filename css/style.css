@@ -116,6 +116,7 @@ font-size: 7px;
 .home-img img {
     width: 30vw;
     animation: floatImage 4s ease-in-out infinite;
+    margin-top: 272px;
 
 }
 
@@ -179,8 +180,8 @@ span{
 
 }
 
-.btn{
-    display: inline-block;
+.btn {
+    display: flex;
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
@@ -192,6 +193,14 @@ span{
     transition: .5s ease;
     animation: floatImage 10s ease-in-out infinite;
 }
+
+.btn i{
+font-size: 20px;
+margin: 2px;
+margin-right: 6px;
+align-content: center;
+}
+
 
 .btn:hover {
     box-shadow:none;
@@ -208,7 +217,10 @@ span{
 
 .about-img img {
     width: 30vw;
+    margin-top: 275px;
 }
+
+
 
 .heading {
     text-align: center;
@@ -221,6 +233,7 @@ span{
 display: flex;
 align-items: center;
 flex-direction: column;
+margin-bottom: 130px;
 }
 
 .about-content h2 {
@@ -240,6 +253,10 @@ flex-direction: column;
 
 .services h2 {
     margin-bottom: 8rem;
+}
+
+#aboutbtn{
+    margin-top: 40px;
 }
 
 
@@ -444,3 +461,47 @@ box-shadow: 0 0 1rem var(--main-color);
     padding: 20px;
 }
 
+
+.field .item{
+    width: 100%;
+    padding: 19px;
+    background: transparent;
+    border: 2px solid #41FFAE;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    margin: 12px 0;
+}
+
+.field .item:hover {
+    border-color: var(--text-color);
+    transform: scale(1.02);
+}
+
+.formcont{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.contact h2{
+    font-size: 40px;
+    color:#fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact form{
+    width: 600px;
+    height: 600px;
+    text-align: center;
+}
+
+#message{
+    margin-top: 30px;
+}
+
+.input-box input{
+
+}
